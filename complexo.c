@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<funcao.h>
 
+
 struct TAD{
 float real, imaginario;
 };
@@ -34,7 +35,8 @@ float cria_nro(tad *p, int r, int i){
     return 1;
 }
 
-float get_value(tad *p, float *r, float *i){ // atribui��o aos valores
+float get_value(tad *p, float *r, float *i){ // atribuição aos valores
+  
     if(p==NULL)
 
         return 0;
