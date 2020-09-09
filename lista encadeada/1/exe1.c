@@ -20,7 +20,7 @@ do
         case (2):
             printf("\nQual o número que deseja inserir? ");
             scanf("%d",&j);
-            insere(l,j);
+            ord(l,j);
         break;
 
         case (3):

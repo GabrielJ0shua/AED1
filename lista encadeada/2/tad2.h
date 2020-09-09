@@ -7,7 +7,7 @@ struct pass
     };
 struct caixa
 {
-    int *no;
+    struct caixa *no;
     struct pass p;
 };
 typedef struct caixa cad;
@@ -18,3 +18,4 @@ int insere(lista *li,unsigned int mat,char nome[],float me, int fal);
 int rem(lista *li,unsigned int b);
 int pos(lista *li,unsigned int b);
 int imprime(lista *li);
+  

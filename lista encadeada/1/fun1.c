@@ -34,7 +34,7 @@ int ord(lista* li, int b){
     if(li == NULL) return 0;
     cad* n = (cad*) malloc(sizeof(cad));
     if(n == NULL) return 0;
-    n->no = b;
+    n->num.nu = b;
     if (vazia(li))
     {
         n->no = (*li);
@@ -87,7 +87,7 @@ int pos(lista *li,int b){
     if(n == NULL) return 0;
     else
     {
-        return n->no;
+        return n->num.nu;
     }
 }
 
@@ -103,14 +103,11 @@ void libera (lista *li){
         free(li);   
     }
 }
-
+ 
 int imprime(lista *li){
     if(li == NULL) return 0;
     if(*li == 0) return 0;
-    int i;
-    cad *ant,*n = *li;
     cad *n = *li;
-    int i = 1;
     while (n != NULL)
     {
         printf("\n| %u |",n->num.nu);

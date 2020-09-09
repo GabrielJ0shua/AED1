@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "tad2.h"
-
+  
 int main(void){
     int i;
     lista *l;
@@ -32,12 +32,12 @@ do
             scanf("%f",&me);
             printf("\nQuantas faltas: ");
             scanf("%d",&fal);
-            insere(l,nome,mat,me,fal);
+            insere(l,mat,nome,me,fal);
         break;
 
         case (3):
             printf("\nQual a matricula que deseja apagar? ");
-            scanf("%u",mat);
+            scanf("%u",&mat);
             rem(l,mat);
         break;
 

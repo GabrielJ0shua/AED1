@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "tad2.h"
- 
+  
 lista *cria(void){
     lista *li;
     li = (lista*) malloc(sizeof(lista));
@@ -29,7 +29,7 @@ int vazia(lista *li){
     if(*li == NULL) return 0;
     return 1;
 }
-
+ 
 int insere(lista *li,unsigned int mat,char nome[],float me, int fal){
     if(li == NULL) return 0;
     cad *n = (cad*) malloc(sizeof(cad));
@@ -39,7 +39,7 @@ int insere(lista *li,unsigned int mat,char nome[],float me, int fal){
     n->p.me = me;
     n->p.fal = fal;
     n->no = NULL;
-    if((*li) == NULL) li = n;
+    if((*li) == NULL) *li = n;
     else
     {
         cad *aux = *li;
@@ -76,7 +76,7 @@ int pos(lista *li,unsigned int b){
     if(n == NULL) return 0;
     else
     {
-        return n->no;
+        /*refazer*/
     }
 }
 
@@ -96,9 +96,7 @@ void libera (lista *li){
 int imprime(lista *li){
     if(li == NULL) return 0;
     if(*li == 0) return 0;
-    int i;
     cad *ant,*n = *li;
-    cad *n = *li;
     int i = 1;
     while (n != NULL)
     {
