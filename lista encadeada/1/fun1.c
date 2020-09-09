@@ -28,7 +28,7 @@ int vazia(lista *li){
     if(li == NULL) return 0;
     if(*li == NULL) return 0;
     return 1;
-}
+} 
 
 int ord(lista* li, int b){
     if(li == NULL) return 0;

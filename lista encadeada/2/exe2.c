@@ -6,15 +6,10 @@
 int main(void){
     int i;
     lista *l;
-    struct pass
-    {
-        unsigned int mat;
-        char nome[20];
-        float me;
-        int fal;
-    };
-    struct pass p;
-    
+    unsigned int mat;
+    char nome[20];
+    float me;
+    int fal;
 do
 {
     printf("\n[1]Criar lista\n[2]Inserir elemento\n[3]Remover elemento\n[4]Imprimir a posição do nome\n[5]Imprimir a lista\n[6]Liberar lista\n[7]Sair\n");
@@ -29,27 +24,27 @@ do
         case (2):
             printf("\nQual o nome que deseja inserir? ");
             setbuf(stdin,NULL);
-            gets(p.nome);
+            gets(nome);
             setbuf(stdin,NULL);
             printf("\nQual a matrícula: ");
-            scanf("%u",&p.mat);
+            scanf("%u",&mat);
             printf("\nQuanto de média: ");
-            scanf("%f",&p.me);
+            scanf("%f",&me);
             printf("\nQuantas faltas: ");
-            scanf("%d",&p.fal);
-            insere(l,p.nome,p.mat,p.me,p.fal);
+            scanf("%d",&fal);
+            insere(l,nome,mat,me,fal);
         break;
 
         case (3):
             printf("\nQual a matricula que deseja apagar? ");
-            scanf("%u",p.mat);
-            rem(l,p.mat);
+            scanf("%u",mat);
+            rem(l,mat);
         break;
 
         case (4):
             printf("\nQual a matricula que deseja consultar? ");
-            scanf("%u",&p.mat);
-            printf("| %d |",pos(l,p.mat));
+            scanf("%u",&mat);
+            printf("| %d |",pos(l,mat));
         break;
 
         case (5):

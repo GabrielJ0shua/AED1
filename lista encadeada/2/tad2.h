@@ -12,6 +12,7 @@ struct caixa
 };
 typedef struct caixa cad;
 typedef struct caixa* lista;lista *cria(void);
+lista *cria(void);
 void libera (lista *li);
 int insere(lista *li,unsigned int mat,char nome[],float me, int fal);
 int rem(lista *li,unsigned int b);
