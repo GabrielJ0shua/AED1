@@ -9,9 +9,9 @@ int main(void)
     Pilha* pi;
     do
     {
-    printf("\n[1]Criar Pilha\n[2]Inserir elementos\n[3]Remover primeiro elemento\n[4]Imprimir a posição do elemento\n[5]Liberar fila\n[6]Sair\n");
+    printf("\n[1]Criar Pilha\n[2]Inserir elementos\n[3]Remover primeiro elemento\n[4]Imprimir todos os elementos\n[5]Liberar Pilha\n[6]Sair\n");
     scanf("%d",&i);
-    clear();
+    //clear();
     switch (i)
     {
         case (1):
@@ -20,40 +20,37 @@ int main(void)
         break;
 
         case (2):
-            clear();
+            //clear();
             printf("\nQual o número que deseja inserir? ");
             setbuf(stdin,NULL);
             scanf("%d",&x);
             push(pi,x);
-            clear();
+            //clear();
         break;
 
         case (3):
             pop(pi);
-            clear();
+            //clear();
         break;
 
         case (4):
-            clear();
-            printf("\nQual elemento que deseja consultar?");
-            setbuf(stdin,NULL);
-            scanf("%d",&x);
-            x = consulta_pilha(pi, x);
-            printf("\n| %d |\n",x);
+            //clear();
+            imprime(pi);
         break;
 
         case (5):
             libera_pilha(pi);
             pi = cria_pilha();
-            clear();
+            //clear();
         break;
 
         case (6):
             libera_pilha(pi);
-            clear();
+            //clear();
             return 0;
         break;
     }
 } while (i>0 && i<7);
+libera_pilha(pi);
 return 1;
 }

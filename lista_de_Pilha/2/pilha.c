@@ -81,3 +81,12 @@ int consulta_pilha(Pilha *pi, int x){
     x = (*pi)->num.x;
     return 1;
 }
+
+void imprime(Pilha *pi){
+    elem* aux = pi;
+    while (aux != NULL)
+    {
+        printf("\n| %d |\n",(aux->num.x));
+        aux = aux->prox;
+    }
+}

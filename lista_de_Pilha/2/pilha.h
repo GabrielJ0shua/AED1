@@ -10,3 +10,4 @@ int push(Pilha *pi, int x);
 int pop(Pilha *pi);
 int consulta_pilha(Pilha *pi, int x);
 int consulta_pilha(Pilha *pi, int x);
+void imprime(Pilha *pi);

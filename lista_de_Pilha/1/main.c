@@ -9,7 +9,7 @@ int main(void)
     Pilha* pi;
     do
     {
-    printf("\n[1]Criar Pilha\n[2]Inserir elementos\n[3]Remover primeiro elemento\n[4]Imprimir a Fila\n[5]Liberar fila\n[6]Sair\n");
+    printf("\n[1]Criar Pilha\n[2]Inserir elementos\n[3]Remover primeiro elemento\n[4]Imprimir a Pilha\n[5]Liberar pilha\n[6]Sair\n");
     scanf("%d",&i);
     clear();
     switch (i)
