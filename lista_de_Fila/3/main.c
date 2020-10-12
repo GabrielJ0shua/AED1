@@ -12,7 +12,7 @@ int main(void)
 {
     printf("\n[1]Criar Fila\n[2]Inserir elementos\n[3]Remover primeiro elemento\n[4]Imprimir a Fila\n[5]Liberar fila\n[6]Sair\n");
     scanf("%d",&i);
-    clear();
+    //clear();
     switch (i)
     {
         case (1):
@@ -29,7 +29,7 @@ int main(void)
             printf("\nPreço: ");
             scanf("%f",&a.preco);
             insere_fila(fi,a);
-            clear();
+            //clear();
         break;
 
         case (3):
@@ -43,11 +43,11 @@ int main(void)
         case (5):
             libera_fila(fi);
             fi = cria_fila();
-            clear();
+            //clear();
         break;
 
         case (6):
-            clear();
+            //clear();
             libera_fila(fi);
             return 0;
         break;

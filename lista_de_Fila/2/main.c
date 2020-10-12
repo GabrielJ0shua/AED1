@@ -10,7 +10,7 @@ int main(void)
     int x,i;
     do
 {
-    clear();
+    //clear;
     printf("\n[1]Criar Fila\n[2]Inserir elemento\n[3]Remover primeiro elemento\n[4]Imprimir a Fila\n[5]Liberar fila\n[6]Sair\n");
     scanf("%d",&i);
     switch (i)

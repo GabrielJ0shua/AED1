@@ -77,8 +77,10 @@ void clear(void)
 
 void imprime(lista *fi){
     if (fi == NULL || fila_vazia(fi)) printf("\nNão a nada a ser impresso...");
-    for (int i = 0; i < fi->qnt; i++)
+    int i = 0;
+    while (i < fi->qnt)
     {
-        printf("\n| %i || %s || %f || %i |",fi->alunos[i].matricula,fi->alunos[i].nome,fi->alunos[i].media,fi->alunos[i].faltas);
+        printf("\n| %s || %d || %f || %d |",fi->alunos[i].nome, fi->alunos[i].matricula, fi->alunos[i].media, fi->alunos[i].faltas);
+        i++;
     }
 }
